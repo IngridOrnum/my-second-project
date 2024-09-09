@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <script defer src="calculator.js"></script>
+</head>
+<body>
+    <section>
+        <p>Calculator</p>
+        <div>
+            <div>
+                <button class="btn-1"
+                        onclick="calcTotal ++;">1
+                </button>
+                <button class="btn-2"
+                        onclick="calcTotal += 2;">2
+                </button>
+                <button class="btn-3"
+                        onclick="calcTotal += 3;">3
+                </button>
+                <button class="btn-addition">+</button>
+            </div>
+            <div>
+                <button class="btn-2"
+                        onclick="calcTotal += 4;">4
+                </button>
+                <button class="btn-3"
+                        onclick="calcTotal += 5;">5
+                </button>
+                <button class="btn-2"
+                        onclick="calcTotal += 6;">6
+                </button>
+                <button class="btn-subtract">-</button>
+            </div>
+            <div>
+                <button class="btn-2"
+                        onclick="calcTotal += 7;">7
+                </button>
+                <button class="btn-3"
+                        onclick="calcTotal += 8;">8
+                </button>
+                <button class="btn-2"
+                        onclick="calcTotal += 9;">9
+                </button>
+                <button class="btn-equals">*</button>
+            </div>
+            <div>
+                <button class="btn-0"
+                        onclick="calcTotal += 0;">0
+                </button>
+                <button class="btn-equals">.</button>
+                <button class="btn-equals">/</button>
+                <button class="btn-equals">=</button>
+            </div>
+        </div>
+        <div>
+            <p>Total:</p>
+            <div class="displayCalcTotal">0</div>
+        </div>
+    </section>
+</body>
+</html>
