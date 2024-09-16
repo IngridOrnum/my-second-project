@@ -1,16 +1,31 @@
+document.querySelectorAll('.game-btn').forEach(button => {
+    button.addEventListener('click', function () {
+        const randomNumber = Math.random();
+        const playerMove = this.value;
+        let computerMove = '';
 
-let gameBtn = document.querySelectorAll('.game-btn');
 
-function clickGameBtn () {
-    gameBtn.closest.onclick = '' +
-        ''
-}
+        if (randomNumber >= 0 && randomNumber < 1 / 3) {
+            computerMove = 'rock';
+        } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
+            computerMove = 'paper';
+        } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
+            computerMove = 'scissors';
+        }
 
-const randomNumber = gameBtn.Math.random();
+        let result = '';
 
-if (randomNumber >= 0 randomNumber < 1 / 3) {
-    console.log()
-}
-
-console.log(true && false);
-console.log(0.2 >= 0 && 0.2 < 1 / 3)
+        if (playerMove === computerMove) {
+            result = 'Tie!';
+        } else if (
+            (playerMove === 'scissors' && computerMove === 'paper') ||
+            (playerMove === 'paper' && computerMove === 'rock') ||
+            (playerMove === 'rock' && computerMove === 'scissors')
+        ){
+            result = 'You Win!'
+        } else {
+            result = 'You Loose!'
+        }
+        alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}`);
+    })
+})
